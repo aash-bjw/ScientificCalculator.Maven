@@ -27,4 +27,8 @@ public class BasicCalculator {
     public double square(double x){
         return number = x * x;
     }
+
+    public double exponent(double x, double y){
+        return number = Math.pow(x,y);
+    }
 }

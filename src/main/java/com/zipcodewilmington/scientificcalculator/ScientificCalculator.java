@@ -4,39 +4,55 @@ public class ScientificCalculator {
 
     double number;
 
-    public void factorial(double x){
+    public double factorial(double x){
+
+        double digit = 0;
+        for(int i = 1; i <= x; i++)
+        digit *= i;
+        return number = digit;
+    }
+
+    public double inverse(double x){
+
+        return number;
+    }
+
+    public double switchSign(double x){
+
+        return number;
+    }
+
+    public double sine(double x){
+
+        return number;
 
     }
 
-    public void inverse(double x){
+    public double cosine(double x){
+
+        return number;
+    }
+
+    public double tangent(double x){
+
+        return number;
+    }
+
+    public double inverseSine(double x){
+
+        return number;
 
     }
 
-    public void switchSign(double x){
+    public double inverseCosine(double x){
+
+        return number;
 
     }
 
-    public void sine(double x){
+    public double inverseTangent(double x){
 
-    }
-
-    public void cosine(double x){
-
-    }
-
-    public void tangent(double x){
-
-    }
-
-    public void inverseSine(double x){
-
-    }
-
-    public void inverseCosine(double x){
-
-    }
-
-    public void inverseTangent(double x){
+        return number;
 
     }
 
