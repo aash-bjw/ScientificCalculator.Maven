@@ -17,7 +17,13 @@ public class BasicCalculator {
     }
 
     public double divide(double x, double y){
-        return number = x / y;
+        if (x == 0) {
+            System.out.println("Error! Dividing by zero is not allowed!");
+            return 0;
+        }
+        else {
+            return number = x / y;
+        }
     }
 
     public double squareRoot(double x){
