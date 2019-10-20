@@ -2,33 +2,85 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class BasicCalculator {
 
-    double number;
+    private double number;
 
-    public double add(double x, double y){
-        return number = x + y;
+    public String add(){
+
+        try {
+            Double x = Console.getDoubleInput("First number: ");
+            Double y = Console.getDoubleInput("current to: ");
+            return x + y;
+            return Double.toString(number);
+        }
+        catch(Exception e){
+            return "ERR";
+        }
+        //update display
     }
 
-    public double subtract(double x, double y){
+    public String subtract(){
+
+
+        try{
+            Double x = Console.getDoubleInput("First number: ");
+            Double y = Console.getDoubleInput("minus: ");
+            number = x - y;
+            return Double.toString(number);
+
+        }
+
+        catch(Exception e){
+            Console.println("ERR");
+        }
         return number = x - y;
     }
 
-    public double multiply(double x, double y){
-        return number = x * y;
+    public String multiply(){
+
+        try{
+            Double x = Console.getDoubleInput("First number: ");
+            Double y = Console.getDoubleInput("multiplied by: ");
+            number = x * y;
+            return Double.toString(number);
+
+        }
+        catch(Exception e) {
+            return "ERR";
+        }
     }
 
-    public double divide(double x, double y){
-        return number = x / y;
+    public String divide(double x){
+
+
+        try{
+            Double y = Console.getDoubleInput("divided by: ");
+            number = x / y;
+            return Double.toString(number);
+        }
+        catch(Exception e){
+            return "ERR";
+        }
+
     }
 
-    public double squareRoot(double x){
-        return number = Math.sqrt(x);
-    }
+    public String squareRoot(double x) {
 
-    public double square(double x){
-        return number = x * x;
-    }
 
-    public double exponent(double x, double y){
-        return number = Math.pow(x,y);
+        try{
+            number = Math.sqrt(x);
+        }
+        catch(Exception e){
+            Console.println("ERR");
+        }
+    }
+    public double square(){
+
+        try{
+            Double x = Console.getDoubleInput("Number to be square: ");
+            number = x * x;
+        }
+        catch(Exception e){
+            Console.println("ERR");
+        }
     }
 }
