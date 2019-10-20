@@ -1,6 +1,7 @@
 package com.zipcodewilmington.scientific_calculator;
 
 import com.zipcodewilmington.scientificcalculator.BasicCalculator;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,12 @@ import static junit.framework.TestCase.assertEquals;
 public class BasicCalcTests {
 
 
-    private BasicCalculator calc = new BasicCalculator();
+    private BasicCalculator calc;
+
+    @Before
+    public void setup() {
+        calc = new BasicCalculator();
+    }
 
 
     @Test
@@ -154,12 +160,43 @@ public class BasicCalcTests {
     public void divideTest3(){
         double x = 80;
         double y = 2;
-
         double expected = 40;
         double actual = calc.divide(x,y);
 
         assertEquals(expected, actual);
 
+    }
+
+    @Test
+    public void exponentTest1(){
+        double x = 5;
+        double y = 3;
+        double expected = 125;
+        double actual = calc.exponent(x,y);
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void exponentTest2(){
+        double x = 5;
+        double y = 3;
+        double expected = 125;
+        double actual = calc.exponent(x,y);
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void exponentTest3(){
+        double x = 5;
+        double y = 3;
+        double expected = 125;
+        double actual = calc.exponent(x,y);
+
+        assertEquals(expected, actual);
 
     }
 }
